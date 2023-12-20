@@ -175,4 +175,140 @@ JournalEntries.push(
     })
 );
 
+// Oct 18
+JournalEntries.push(
+  entry(
+    {
+      date: 'Oct 18',
+      account: 'Accounts Receivable',
+      folio: '120',
+      debit: '317,000'
+    }),
+  entry({
+      account: 'Medical Revenues',
+      folio: '410',
+      credit: '317,000',
+      indent: true
+    })
+);
+
+// Oct 21
+JournalEntries.push(
+  entry(
+    {
+      date: 'Oct 21',
+      account: 'Repairs Expense',
+      folio: '530',
+      debit: '23,000'
+    }),
+  entry({
+      account: 'Cash',
+      folio: '110',
+      credit: '23,000',
+      indent: true
+    })
+);
+
+// Oct 23
+JournalEntries.push(
+  entry(
+    {
+      date: 'Oct 23',
+      account: 'Telephone Expense',
+      folio: '560',
+      debit: '3,000'
+    }),
+  entry({
+      account: 'Cash',
+      folio: '110',
+      credit: '3,000',
+      indent: true
+    })
+);
+
+// Oct 24
+JournalEntries.push(
+  entry(
+    {
+      date: 'Oct 24',
+      account: 'Medical Equipment',
+      folio: '170',
+      debit: '45,000'
+    }),
+  entry({
+      account: 'Accounts Payable',
+      folio: '230',
+      credit: '45,000',
+      indent: true
+    })
+);
+
+// Oct 25
+JournalEntries.push(
+  entry(
+    {
+      date: 'Oct 25',
+      account: 'Cash',
+      folio: '110',
+      debit: '113,000'
+    }),
+  entry({
+      account: 'Accounts Receivable',
+      folio: '120',
+      credit: '113,000',
+      indent: true
+    })
+);
+
+// Oct 27
+JournalEntries.push(
+  entry(
+    {
+      date: 'Oct 27',
+      account: 'Accounts Payable',
+      folio: '230',
+      debit: '13,000'
+    }),
+  entry({
+      account: 'Cash',
+      folio: '110',
+      credit: '13,000',
+      indent: true
+    })
+);
+
+// Oct 30-1
+JournalEntries.push(
+  entry(
+    {
+      date: 'Oct 30',
+      account: 'Marasigan, Withdrawals',
+      folio: '320',
+      debit: '200,000'
+    }),
+  entry({
+      account: 'Cash',
+      folio: '110',
+      credit: '200,000',
+      indent: true
+    })
+);
+
+// Oct 30-2
+JournalEntries.push(
+  entry(
+    {
+      date: 'Oct 30',
+      account: 'Association Dues Expense',
+      folio: '550',
+      debit: '15,000'
+    }),
+  entry({
+      account: 'Cash',
+      folio: '110',
+      credit: '15,000',
+      indent: true
+    })
+);
+
 export default JournalEntries;
