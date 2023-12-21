@@ -157,7 +157,7 @@ accounts.push(Account({
 // 20% Notes Payable
 accounts.push(Account({
   code: 220,
-  title: '24% Notes Payable',
+  title: '20% Notes Payable',
   entries: [
     Entry({credit_date: 'Oct. 1', credit: 1200000})
   ]
