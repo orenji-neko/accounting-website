@@ -1,7 +1,7 @@
 import { Table } from "react-bootstrap";
 import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import JournalEntries from "./journal_entries";
+import {JournalEntries, AdjustingEntries} from "./journal_entries";
 
 const JournalEntry = ({entry}) => {
   return (
@@ -20,11 +20,29 @@ const JournalEntry = ({entry}) => {
 const GeneralJournal = () => {
   return (
     <>
-      <div style={{textAlign: "center"}}>
-        <h4>Dr. Nick Marasigan</h4>
-        <h4>General Journal</h4>
-        <h4>For the month ended October 31. 2022</h4>
-      </div>
+      <Table style={{marginTop: 50}} border={2}>
+        <thead>
+          <tr>
+            <td colSpan={6} style={{textAlign: 'center'}}>
+              <h4>Dr. Nick Marasigan, MD</h4>
+              <h4>General Journal</h4>
+              <h4>for the month ended October 31. 2022</h4>
+            </td>
+          </tr>
+          <tr>
+            <th>Date</th>
+            <th>Particulars</th>
+            <th>folio</th>
+            <th>Debit</th>
+            <th>Credit</th>
+          </tr>
+        </thead>
+        <tbody>
+          {JournalEntries.map((entry, index) => {
+            return <JournalEntry entry={entry} key={index}/>
+          })}
+        </tbody>
+      </Table>
       <Table style={{marginTop: 50}} border={2}>
         <thead>
           <tr>
@@ -36,8 +54,8 @@ const GeneralJournal = () => {
           </tr>
         </thead>
         <tbody>
-          {JournalEntries.map((entry) => {
-            return <JournalEntry entry={entry}/>
+          {AdjustingEntries.map((entry, index) => {
+            return <JournalEntry entry={entry} key={index}/>
           })}
         </tbody>
       </Table>

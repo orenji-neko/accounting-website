@@ -81,10 +81,9 @@ accounts.push(Account({
   code: 130,
   title: 'Medical Supplies',
   entries: [
-    Entry({debit_date: 'Oct. 1', debit: 39000, credit_date: 'Oct. 31', credit: 35000}),
+    Entry({debit_date: 'Oct. 1', debit: 39000}),
     Entry({debit_date: 'Oct. 7', debit: 17000}),
     Entry({debit: 56000}),
-    Entry({debit: 21000})
   ]
 }));
 
@@ -93,8 +92,7 @@ accounts.push(Account({
   code: 140,
   title: 'Prepaid Insurance',
   entries: [
-    Entry({debit_date: 'Oct. 2', debit: 20000, credit_date: 'Oct. 31', credit: 1667}),
-    Entry({debit: 18333})
+    Entry({debit_date: 'Oct. 2', debit: 20000}),
   ]
 }));
 
@@ -116,15 +114,6 @@ accounts.push(Account({
   ]
 }));
 
-// Accumulated Depreciation - Building
-accounts.push(Account({
-  code: 165,
-  title: 'Accumulated Depreciation - Building',
-  entries: [
-    Entry({credit_date: 'Oct. 31', credit: 50000})
-  ]
-}));
-
 // Medical Equipment
 accounts.push(Account({
   code: 170,
@@ -133,15 +122,6 @@ accounts.push(Account({
     Entry({debit_date: 'Oct. 1', debit: 420000}),
     Entry({debit_date: 'Oct. 24', debit: 45000}),
     Entry({debit: 465000})
-  ]
-}));
-
-// Accumulated Depreciation - Equipment
-accounts.push(Account({
-  code: 175,
-  title: 'Accumulated Depreciation - Equipment',
-  entries: [
-    Entry({credit_date: 'Oct. 31', credit: 9000})
   ]
 }));
 
@@ -175,33 +155,6 @@ accounts.push(Account({
   ]
 }));
 
-// Salaries Payable
-accounts.push(Account({
-  code: 240,
-  title: 'Salaries Payable',
-  entries: [
-    Entry({credit_date: 'Oct. 31', credit: 51000})
-  ]
-}));
-
-// Interest Payable
-accounts.push(Account({
-  code: 250,
-  title: 'Interest Payable',
-  entries: [
-    Entry({credit_date: 'Oct. 31', credit: 28000})
-  ]
-}));
-
-// Unearned Research Revenues
-accounts.push(Account({
-  code: 260,
-  title: 'Unearned Research Revenues',
-  entries: [
-    Entry({credit_date: 'Oct. 31', credit: 60000})
-  ]
-}));
-
 // Marasigan, Capital
 accounts.push(Account({
   code: 310,
@@ -216,7 +169,7 @@ accounts.push(Account({
   code: 320,
   title: 'Marasigan, Withdrawals',
   entries: [
-    Entry({credit_date: 'Oct. 30', credit: 200000})
+    Entry({debit_date: 'Oct. 30', debit: 200000})
   ]
 }));
 
@@ -236,8 +189,7 @@ accounts.push(Account({
   code: 420,
   title: 'Research Revenues',
   entries: [
-    Entry({debit_date: 'Oct. 31', debit: 60000, credit_date: 'Oct. 12', credit: 90000}),
-    Entry({credit: 30000})
+    Entry({credit_date: 'Oct. 12', credit: 90000}),
   ] 
 }));
 
@@ -247,17 +199,6 @@ accounts.push(Account({
   title: 'Salaries Expense',
   entries: [
     Entry({debit_date: 'Oct. 10', debit: 73000}),
-    Entry({debit_date: 'Oct. 31', debit: 51000}),
-    Entry({debit: 124000})
-  ]
-}));
-
-// Insurance Expense
-accounts.push(Account({
-  code: 520,
-  title: 'Insurance Expense',
-  entries: [
-    Entry({debit_date: 'Oct. 31', debit: 1667}),
   ]
 }));
 
@@ -267,15 +208,6 @@ accounts.push(Account({
   title: 'Repairs Expense',
   entries: [
     Entry({debit_date: 'Oct. 21', debit: 23000}),
-  ]
-}));
-
-// Supplies Expense
-accounts.push(Account({
-  code: 540,
-  title: 'Supplies Expense',
-  entries: [
-    Entry({debit_date: 'Oct. 31', debit: 35000}),
   ]
 }));
 
@@ -297,39 +229,11 @@ accounts.push(Account({
   ]
 }));
 
-// Depreciation Expense - Building
-accounts.push(Account({
-  code: 570,
-  title: 'Depreciation Expense - Building',
-  entries: [
-    Entry({debit_date: 'Oct. 31', debit: 5000}),
-  ]
-}));
-
-// Depreciation Expense - Equipment
-accounts.push(Account({
-  code: 580,
-  title: 'Depreciation Expense - Equipment',
-  entries: [
-    Entry({debit_date: 'Oct. 31', debit: 9000}),
-  ]
-}));
-
-// Interest Expense
-accounts.push(Account({
-  code: 590,
-  title: 'Interest Expense',
-  entries: [
-    Entry({debit_date: 'Oct. 31', debit: 280000}),
-  ]
-}));
-
-
 const Ledger = () => {
   return (
     <>
-      <div style={{textAlign: "center"}}>
-        <h4>Dr. Nick Marasigan</h4>
+      <div style={{textAlign: "center", marginTop: 10}}>
+        <h4>Dr. Nick Marasigan, MD</h4>
         <h4>General Ledger</h4>
         <h4>For the month ended October 31. 2022</h4>
       </div>

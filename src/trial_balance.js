@@ -27,7 +27,7 @@ entries.push({account: 'Interest Payable'})
 entries.push({account: 'Unearned Research Revenues'})
 
 entries.push({account: 'Marasigan, Capital', credit: 250000})
-entries.push({account: 'Marasigan, Withdrawals', credit: 200000})
+entries.push({account: 'Marasigan, Withdrawals', debit: 200000})
 entries.push({account: 'Income Summary'})
 
 entries.push({account: 'Medical Revenues', credit: 434000})
@@ -47,13 +47,15 @@ entries.push({account: 'Total', debit: 2423000, credit: 2423000})
 const TrialBalance = () => {
   return (
     <>
-      <div style={{textAlign: "center"}}>
-        <h4>Dr. Nick Marasigan</h4>
-        <h4>Trial Balance</h4>
-        <h4>For the month ended October 31. 2022</h4>
-      </div>
       <Table style={{marginTop: 50}} border={2}>
         <thead>
+          <tr>
+            <td colSpan={6} style={{textAlign: 'center'}}>
+              <h4>Dr. Nick Marasigan, MD</h4>
+              <h4>Trial Balance</h4>
+              <h4>for the month ended October 31. 2022</h4>
+            </td>
+          </tr>
           <tr>
             <th colSpan={2}>Particulars</th>
             <th>Debit</th>

@@ -361,13 +361,15 @@ entries.push({
 const Worksheet = () => {
   return (
     <>
-      <div style={{textAlign: "center"}}>
-        <h4>Dr. Nick Marasigan</h4>
-        <h4>10-Column Worksheet</h4>
-        <h4>For the month ended October 31. 2022</h4>
-      </div>
       <Table style={{marginTop: 50}} border={2}>
         <thead>
+          <tr>
+            <td colSpan={12} style={{textAlign: 'center'}}>
+              <h4>Dr. Nick Marasigan, MD</h4>
+              <h4>10-Column Worksheet</h4>
+              <h4>for the month ended October 31. 2022</h4>
+            </td>
+          </tr>
           <tr>
             <th colSpan={2}>Particulars</th>
             <th colSpan={2}>Unadjusted Trial Balance</th>

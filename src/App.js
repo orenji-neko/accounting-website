@@ -9,6 +9,7 @@ import TrialBalance from "./trial_balance";
 import Worksheet from "./worksheet";
 import FinancialStatements from "./financial_statements";
 import Home from "./home";
+import Chart from "./chart";
 
 function App() {
   let [panel, setPanel] = useState(<Home/>);
@@ -18,7 +19,7 @@ function App() {
       <Container fluid className="bg-dark text-white p-2">
         <h1>Project in Accounting</h1>
         <button onClick={() => {setPanel(<Home/>)}}>Home</button>
-        <button>Chart of Accounts</button>
+        <button onClick={()=>{setPanel(<Chart/>)}}>Chart of Accounts</button>
         <button onClick={() => {setPanel(<GeneralJournal/>)}}>General Journal</button>
         <button onClick={() => {setPanel(<Ledger/>)}}>General Ledger</button>
         <button onClick={() => {setPanel(<TrialBalance/>)}}>Trial Balance</button>

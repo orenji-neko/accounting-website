@@ -10,6 +10,7 @@ const entry = ({date = '', account = '', folio = '', debit = '', credit = '', in
 }
 
 const JournalEntries = [];
+const AdjustingEntries = [];
 
 // Oct 1-1
 JournalEntries.push(
@@ -310,5 +311,132 @@ JournalEntries.push(
       indent: true
     })
 );
+// Totals
+JournalEntries.push(
+  entry(
+    {
+      account: 'Total',
+      debit: 3005000,
+      credit: 3005000
+    }),
+);
 
-export default JournalEntries;
+// Oct. 31-1
+AdjustingEntries.push(
+  entry(
+    {
+      date: 'Oct 31',
+      account: 'Insurance Expense',
+      folio: 520,
+      debit: 1666.67
+    }),
+  entry({
+      account: 'Prepaid Insurance',
+      folio: 140,
+      credit: 1666.67,
+      indent: true
+    })
+);
+// Oct. 31-2
+AdjustingEntries.push(
+  entry(
+    {
+      date: 'Oct 31',
+      account: 'Supplies Expense',
+      folio: 540,
+      debit: 35000
+    }),
+  entry({
+      account: 'Medical Supplies',
+      folio: 130,
+      credit: 35000,
+      indent: true
+    })
+);
+// Oct. 31-3
+AdjustingEntries.push(
+  entry(
+    {
+      date: 'Oct 31',
+      account: 'Depreciation Expense - Building',
+      folio: 570,
+      debit: 5000
+    }),
+  entry(
+      {
+        account: 'Depreciation Expense - Equipment',
+        folio: 580,
+        debit: 9000
+      }),
+  entry({
+      account: 'Accumulated Depreciation - Building',
+      folio: 165,
+      credit: 5000,
+      indent: true
+    }),
+    entry({
+      account: 'Accumulated Depreciation - Equipment',
+      folio: 175,
+      credit: 9000,
+      indent: true
+    }),
+);
+// Oct. 31-4
+AdjustingEntries.push(
+  entry(
+    {
+      date: 'Oct 31',
+      account: 'Research Revenues',
+      folio: 420,
+      debit: 60000
+    }),
+  entry({
+      account: 'Unearned Research Revenues',
+      folio: 260,
+      credit: 60000,
+      indent: true
+    })
+);
+// Oct. 31-5
+AdjustingEntries.push(
+  entry(
+    {
+      date: 'Oct 31',
+      account: 'Salaries Expense',
+      folio: 510,
+      debit: 51000
+    }),
+  entry({
+      account: 'Salaries Payable',
+      folio: 240,
+      credit: 51000,
+      indent: true
+    })
+);
+// Oct. 31-5
+AdjustingEntries.push(
+  entry(
+    {
+      date: 'Oct 31',
+      account: 'Interest Expense',
+      folio: 590,
+      debit: 28000
+    }),
+  entry({
+      account: 'Interest Payable',
+      folio: 250,
+      credit: 28000,
+      indent: true
+    })
+);
+// Totals
+AdjustingEntries.push(
+  entry(
+    {
+      account: 'Total',
+      debit: 189666.67,
+      credit: 189666.67
+    })
+);
+
+export {JournalEntries, AdjustingEntries};
