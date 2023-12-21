@@ -7,7 +7,7 @@ const Entry = ({debit_date = '', debit = '', credit_date = '', credit = ''}) => 
     debit_date,
     debit,
     credit_date,
-    credit
+    credit,
   }
 }
 
@@ -47,6 +47,7 @@ const Account = ({code, title, entries}) => {
 
 let accounts = [];
 
+// Cash
 accounts.push(Account({
   code: 110,
   title: 'Cash',
@@ -62,6 +63,85 @@ accounts.push(Account({
     Entry({credit_date: 'Oct. 30', credit: 15000}),
     Entry({debit: 570000, credit: 456000}),
     Entry({debit: 114000})
+  ]
+}));
+
+// Accounts Receivable
+accounts.push(Account({
+  code: 120,
+  title: 'Accounts Receivable',
+  entries: [
+    Entry({debit_date: 'Oct. 18', debit: 317000, credit_date: 'Oct. 25', credit: 113000}),
+    Entry({debit: 204000})
+  ]
+}));
+
+// Medical Supplies
+accounts.push(Account({
+  code: 130,
+  title: 'Medical Supplies',
+  entries: [
+    Entry({debit_date: 'Oct. 1', debit: 39000, credit_date: 'Oct. 31', credit: 35000}),
+    Entry({debit_date: 'Oct. 7', debit: 17000}),
+    Entry({debit: 56000}),
+    Entry({debit: 21000})
+  ]
+}));
+
+// Prepaid Insurance
+accounts.push(Account({
+  code: 140,
+  title: 'Prepaid Insurance',
+  entries: [
+    Entry({debit_date: 'Oct. 2', debit: 20000, credit_date: 'Oct. 31', credit: 1667}),
+    Entry({debit: 18333})
+  ]
+}));
+
+// Land
+accounts.push(Account({
+  code: 150,
+  title: 'Land',
+  entries: [
+    Entry({debit_date: 'Oct. 1', debit: 250000})
+  ]
+}));
+
+// Medical Building
+accounts.push(Account({
+  code: 160,
+  title: 'Medical Building',
+  entries: [
+    Entry({debit_date: 'Oct. 1', debit: 1000000})
+  ]
+}));
+
+// Accumulated Depreciation - Building
+accounts.push(Account({
+  code: 165,
+  title: 'Accumulated Depreciation - Building',
+  entries: [
+    Entry({credit_date: 'Oct. 31', credit: 50000})
+  ]
+}));
+
+// Medical Equipment
+accounts.push(Account({
+  code: 170,
+  title: 'Medical Equipment',
+  entries: [
+    Entry({debit_date: 'Oct. 1', debit: 420000}),
+    Entry({debit_date: 'Oct. 24', debit: 45000}),
+    Entry({debit: 465000})
+  ]
+}));
+
+// Accumulated Depreciation - Equipment
+accounts.push(Account({
+  code: 175,
+  title: 'Accumulated Depreciation - Equipment',
+  entries: [
+    Entry({credit_date: 'Oct. 31', credit: 9000})
   ]
 }));
 
