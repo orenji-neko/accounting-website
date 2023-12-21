@@ -24,7 +24,7 @@ const GeneralJournal = () => {
         <h2>General Journal</h2>
         <h4>For the month ended October 31. 2022</h4>
       </div>
-      <Table>
+      <Table style={{marginTop: 50}} border={2}>
         <thead>
           <tr>
             <th>Date</th>

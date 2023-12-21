@@ -14,7 +14,7 @@ const Entry = ({debit_date = '', debit = '', credit_date = '', credit = ''}) => 
 const Account = ({code, title, entries}) => {
   return (
     <>
-      <Table>
+      <Table style={{marginTop: 50}} border={2}>
         <thead>
           <tr>
             <th>{code}</th>
@@ -144,6 +144,186 @@ accounts.push(Account({
     Entry({credit_date: 'Oct. 31', credit: 9000})
   ]
 }));
+
+// 24% Notes Payable
+accounts.push(Account({
+  code: 210,
+  title: '24% Notes Payable',
+  entries: [
+    Entry({credit_date: 'Oct. 1', credit: 400000})
+  ]
+}));
+
+// 20% Notes Payable
+accounts.push(Account({
+  code: 220,
+  title: '24% Notes Payable',
+  entries: [
+    Entry({credit_date: 'Oct. 1', credit: 1200000})
+  ]
+}));
+
+// Accounts Payable
+accounts.push(Account({
+  code: 230,
+  title: 'Accounts Payable',
+  entries: [
+    Entry({debit_date: 'Oct. 27', debit: 13000, credit_date: 'Oct. 7', credit: 17000}),
+    Entry({credit_date: 'Oct. 24', credit: 45000}),
+    Entry({credit: 62000}),
+    Entry({credit: 49000})
+  ]
+}));
+
+// Salaries Payable
+accounts.push(Account({
+  code: 240,
+  title: 'Salaries Payable',
+  entries: [
+    Entry({credit_date: 'Oct. 31', credit: 51000})
+  ]
+}));
+
+// Interest Payable
+accounts.push(Account({
+  code: 250,
+  title: 'Interest Payable',
+  entries: [
+    Entry({credit_date: 'Oct. 31', credit: 28000})
+  ]
+}));
+
+// Unearned Research Revenues
+accounts.push(Account({
+  code: 260,
+  title: 'Unearned Research Revenues',
+  entries: [
+    Entry({credit_date: 'Oct. 31', credit: 60000})
+  ]
+}));
+
+// Marasigan, Capital
+accounts.push(Account({
+  code: 310,
+  title: 'Marasigan, Capital',
+  entries: [
+    Entry({credit_date: 'Oct. 1', credit: 250000})
+  ]
+}));
+
+// Marasigan, Withdrawals
+accounts.push(Account({
+  code: 320,
+  title: 'Marasigan, Withdrawals',
+  entries: [
+    Entry({credit_date: 'Oct. 30', credit: 200000})
+  ]
+}));
+
+// Medical Revenues
+accounts.push(Account({
+  code: 410,
+  title: 'Medical Revenues',
+  entries: [
+    Entry({credit_date: 'Oct. 4', credit: 117000}),
+    Entry({credit_date: 'Oct. 18', credit: 317000}),
+    Entry({credit: 434000})
+  ]
+}));
+
+// Research Revenues
+accounts.push(Account({
+  code: 420,
+  title: 'Research Revenues',
+  entries: [
+    Entry({debit_date: 'Oct. 31', debit: 60000, credit_date: 'Oct. 12', credit: 90000}),
+    Entry({credit: 30000})
+  ] 
+}));
+
+// Salaries Expense
+accounts.push(Account({
+  code: 510,
+  title: 'Salaries Expense',
+  entries: [
+    Entry({debit_date: 'Oct. 10', debit: 73000}),
+    Entry({debit_date: 'Oct. 31', debit: 51000}),
+    Entry({debit: 124000})
+  ]
+}));
+
+// Insurance Expense
+accounts.push(Account({
+  code: 520,
+  title: 'Insurance Expense',
+  entries: [
+    Entry({debit_date: 'Oct. 31', debit: 1667}),
+  ]
+}));
+
+// Repairs Expense
+accounts.push(Account({
+  code: 530,
+  title: 'Repairs Expense',
+  entries: [
+    Entry({debit_date: 'Oct. 21', debit: 23000}),
+  ]
+}));
+
+// Supplies Expense
+accounts.push(Account({
+  code: 540,
+  title: 'Supplies Expense',
+  entries: [
+    Entry({debit_date: 'Oct. 31', debit: 35000}),
+  ]
+}));
+
+// Association Dues Expense
+accounts.push(Account({
+  code: 550,
+  title: 'Association Dues Expense',
+  entries: [
+    Entry({debit_date: 'Oct. 30', debit: 15000}),
+  ]
+}));
+
+// Telephone Expense
+accounts.push(Account({
+  code: 560,
+  title: 'Telephone Expense',
+  entries: [
+    Entry({debit_date: 'Oct. 23', debit: 3000}),
+  ]
+}));
+
+// Depreciation Expense - Building
+accounts.push(Account({
+  code: 570,
+  title: 'Depreciation Expense - Building',
+  entries: [
+    Entry({debit_date: 'Oct. 31', debit: 5000}),
+  ]
+}));
+
+// Depreciation Expense - Equipment
+accounts.push(Account({
+  code: 580,
+  title: 'Depreciation Expense - Equipment',
+  entries: [
+    Entry({debit_date: 'Oct. 31', debit: 9000}),
+  ]
+}));
+
+// Interest Expense
+accounts.push(Account({
+  code: 590,
+  title: 'Interest Expense',
+  entries: [
+    Entry({debit_date: 'Oct. 31', debit: 280000}),
+  ]
+}));
+
 
 const Ledger = () => {
   return (
