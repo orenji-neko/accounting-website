@@ -21,7 +21,8 @@ const GeneralJournal = () => {
   return (
     <>
       <div style={{textAlign: "center"}}>
-        <h2>General Journal</h2>
+        <h4>Dr. Nick Marasigan</h4>
+        <h4>General Journal</h4>
         <h4>For the month ended October 31. 2022</h4>
       </div>
       <Table style={{marginTop: 50}} border={2}>

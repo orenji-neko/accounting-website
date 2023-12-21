@@ -329,7 +329,8 @@ const Ledger = () => {
   return (
     <>
       <div style={{textAlign: "center"}}>
-        <h2>General Ledger</h2>
+        <h4>Dr. Nick Marasigan</h4>
+        <h4>General Ledger</h4>
         <h4>For the month ended October 31. 2022</h4>
       </div>
       {accounts.map((entry, index) => {

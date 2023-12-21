@@ -48,10 +48,11 @@ const TrialBalance = () => {
   return (
     <>
       <div style={{textAlign: "center"}}>
-        <h2>Trial Balance</h2>
+        <h4>Dr. Nick Marasigan</h4>
+        <h4>Trial Balance</h4>
         <h4>For the month ended October 31. 2022</h4>
       </div>
-      <Table border={2}>
+      <Table style={{marginTop: 50}} border={2}>
         <thead>
           <tr>
             <th colSpan={2}>Particulars</th>

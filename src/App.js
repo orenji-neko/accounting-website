@@ -6,6 +6,7 @@ import { useState } from "react";
 
 import Ledger from "./ledger";
 import TrialBalance from "./trial_balance";
+import Worksheet from "./worksheet";
 
 function App() {
   let [panel, setPanel] = useState(<GeneralJournal/>);
@@ -19,7 +20,7 @@ function App() {
         <button onClick={() => {setPanel(<GeneralJournal/>)}}>General Journal</button>
         <button onClick={() => {setPanel(<Ledger/>)}}>General Ledger</button>
         <button onClick={() => {setPanel(<TrialBalance/>)}}>Trial Balance</button>
-        <button>10-Column Worksheet</button>
+        <button onClick={() => {setPanel(<Worksheet/>)}}>10-Column Worksheet</button>
         <button>Financial Statements</button>
       </Container>
 
