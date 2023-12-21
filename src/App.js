@@ -8,16 +8,16 @@ import Ledger from "./ledger";
 import TrialBalance from "./trial_balance";
 import Worksheet from "./worksheet";
 import FinancialStatements from "./financial_statements";
-import Given from "./given";
+import Home from "./home";
 
 function App() {
-  let [panel, setPanel] = useState(<Given/>);
+  let [panel, setPanel] = useState(<Home/>);
 
   return (
     <>
       <Container fluid className="bg-dark text-white p-2">
         <h1>Project in Accounting</h1>
-        <button onClick={() => {setPanel(<Given/>)}}>Given</button>
+        <button onClick={() => {setPanel(<Home/>)}}>Home</button>
         <button>Chart of Accounts</button>
         <button onClick={() => {setPanel(<GeneralJournal/>)}}>General Journal</button>
         <button onClick={() => {setPanel(<Ledger/>)}}>General Ledger</button>
