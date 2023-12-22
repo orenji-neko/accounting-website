@@ -44,6 +44,7 @@ const Equity = () => {
           <tr>
             <td colSpan={2}>
               <div style={{textAlign: "center"}}>
+                <h4>Dr. Nick Marasigan, MD</h4>
                 <h2>Statement of Changes in Equity</h2>
                 <h4>for the month ended October 31. 2022</h4>
               </div>
@@ -153,6 +154,7 @@ const Income = () => {
           <tr>
             <td colSpan={2}>
               <div style={{textAlign: "center"}}>
+                <h4>Dr. Nick Marasigan, MD</h4>
                 <h2>Income Statement</h2>
                 <h4>for the month ended October 31. 2022</h4>
               </div>
@@ -310,6 +312,7 @@ const Balance = () => {
           <tr>
             <td colSpan={3}>
               <div style={{textAlign: "center"}}>
+                <h4>Dr. Nick Marasigan, MD</h4>
                 <h2>Balance Sheet</h2>
                 <h4>for the month ended October 31. 2022</h4>
               </div>
