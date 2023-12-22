@@ -36,13 +36,13 @@ function App() {
               <p>MEDICAL DOCTOR</p>
             </Navbar.Brand>
             <Nav className="me-auto">
-              <Nav.Link href="#home" onClick={() => {setPanel(<Home/>)}}>Home</Nav.Link>
-              <Nav.Link href="#chart" onClick={()=>{setPanel(<Chart/>)}}>Chart of Accounts</Nav.Link>
-              <Nav.Link href="#generaljournal" onClick={() => {setPanel(<GeneralJournal/>)}}>General Journal</Nav.Link>
-              <Nav.Link href="#generalledger" onClick={() => {setPanel(<Ledger/>)}}>General Ledger</Nav.Link>
-              <Nav.Link href="#trialbalance" onClick={() => {setPanel(<TrialBalance/>)}}>Trial Balance</Nav.Link>
-              <Nav.Link href="#worksheet" onClick={() => {setPanel(<Worksheet/>)}}>10-Column Worksheet</Nav.Link>
-              <Nav.Link href="#financials" onClick={() => {setPanel(<FinancialStatements/>)}}>Financial Statements</Nav.Link>
+              <Nav.Link href="#home" onClick={() => {setPanel(<Home/>)}}>HOME</Nav.Link>
+              <Nav.Link href="#chart" onClick={()=>{setPanel(<Chart/>)}}>CHART OF ACCOUNTS</Nav.Link>
+              <Nav.Link href="#generaljournal" onClick={() => {setPanel(<GeneralJournal/>)}}>GENERAL JOURNAL</Nav.Link>
+              <Nav.Link href="#generalledger" onClick={() => {setPanel(<Ledger/>)}}>GENERAL LEDGER</Nav.Link>
+              <Nav.Link href="#trialbalance" onClick={() => {setPanel(<TrialBalance/>)}}>TRIAL BALANCE</Nav.Link>
+              <Nav.Link href="#worksheet" onClick={() => {setPanel(<Worksheet/>)}}>10-COLUMN WORKSHEET</Nav.Link>
+              <Nav.Link href="#financials" onClick={() => {setPanel(<FinancialStatements/>)}}>FINANCIAL STATEMENTS</Nav.Link>
             </Nav>
           </Container>
         </Navbar>
