@@ -31,7 +31,10 @@ function App() {
       <div>
         <Navbar bg="dark" variant="dark" sticky="top">
           <Container>
-            <Navbar.Brand href="#home" onClick={() => {setPanel(<Home/>)}}>Accounting</Navbar.Brand>
+            <Navbar.Brand href="#home" onClick={() => {setPanel(<Home/>)}}>
+              <h4 style={{marginBottom: -2}}>DR. NICK MARASIGAN</h4>
+              <p>MEDICAL DOCTOR</p>
+            </Navbar.Brand>
             <Nav className="me-auto">
               <Nav.Link href="#home" onClick={() => {setPanel(<Home/>)}}>Home</Nav.Link>
               <Nav.Link href="#chart" onClick={()=>{setPanel(<Chart/>)}}>Chart of Accounts</Nav.Link>
