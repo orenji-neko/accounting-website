@@ -32,17 +32,17 @@ function App() {
         <Navbar bg="dark" variant="dark" sticky="top">
           <Container>
             <Navbar.Brand href="#home" onClick={() => {setPanel(<Home/>)}}>
-              <h4 style={{marginBottom: -2}}>DR. NICK MARASIGAN</h4>
-              <p>MEDICAL DOCTOR</p>
+              <h4 style={{marginBottom: -2}}>Dr. Nick Marasigan</h4>
+              <p>Medical Doctor</p>
             </Navbar.Brand>
             <Nav className="me-auto" style={{marginLeft: "10%"}}>
-              <Nav.Link href="#home" onClick={() => {setPanel(<Home/>)}}>HOME</Nav.Link>
-              <Nav.Link href="#chart" onClick={()=>{setPanel(<Chart/>)}}>CHART OF ACCOUNTS</Nav.Link>
-              <Nav.Link href="#generaljournal" onClick={() => {setPanel(<GeneralJournal/>)}}>GENERAL JOURNAL</Nav.Link>
-              <Nav.Link href="#generalledger" onClick={() => {setPanel(<Ledger/>)}}>GENERAL LEDGER</Nav.Link>
-              <Nav.Link href="#trialbalance" onClick={() => {setPanel(<TrialBalance/>)}}>TRIAL BALANCE</Nav.Link>
-              <Nav.Link href="#worksheet" onClick={() => {setPanel(<Worksheet/>)}}>10-COLUMN WORKSHEET</Nav.Link>
-              <Nav.Link href="#financials" onClick={() => {setPanel(<FinancialStatements/>)}}>FINANCIAL STATEMENTS</Nav.Link>
+              <Nav.Link href="#home" onClick={() => {setPanel(<Home/>)}}>Home</Nav.Link>
+              <Nav.Link href="#chart" onClick={()=>{setPanel(<Chart/>)}}>Chart of Accounts</Nav.Link>
+              <Nav.Link href="#generaljournal" onClick={() => {setPanel(<GeneralJournal/>)}}>General Journal</Nav.Link>
+              <Nav.Link href="#generalledger" onClick={() => {setPanel(<Ledger/>)}}>General Ledger</Nav.Link>
+              <Nav.Link href="#trialbalance" onClick={() => {setPanel(<TrialBalance/>)}}>Trial Balance</Nav.Link>
+              <Nav.Link href="#worksheet" onClick={() => {setPanel(<Worksheet/>)}}>10-Column Worksheet</Nav.Link>
+              <Nav.Link href="#financials" onClick={() => {setPanel(<FinancialStatements/>)}}>Financial Statements</Nav.Link>
             </Nav>
           </Container>
         </Navbar>
