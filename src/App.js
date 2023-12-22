@@ -30,7 +30,7 @@ function App() {
       <div>
         <Navbar bg="dark" variant="dark" sticky="top">
           <Container>
-            <Navbar.Brand href="#home" onClick={() => {setPanel(<Home/>)}}>
+            <Navbar.Brand href="#home">
               <h4 style={{marginBottom: -2}}>Dr. Nick Marasigan</h4>
               <p>Medical Doctor</p>
             </Navbar.Brand>
