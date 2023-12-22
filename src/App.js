@@ -35,7 +35,7 @@ function App() {
               <h4 style={{marginBottom: -2}}>DR. NICK MARASIGAN</h4>
               <p>MEDICAL DOCTOR</p>
             </Navbar.Brand>
-            <Nav className="me-auto">
+            <Nav className="me-auto" style={{marginLeft: "10%"}}>
               <Nav.Link href="#home" onClick={() => {setPanel(<Home/>)}}>HOME</Nav.Link>
               <Nav.Link href="#chart" onClick={()=>{setPanel(<Chart/>)}}>CHART OF ACCOUNTS</Nav.Link>
               <Nav.Link href="#generaljournal" onClick={() => {setPanel(<GeneralJournal/>)}}>GENERAL JOURNAL</Nav.Link>
