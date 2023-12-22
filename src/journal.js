@@ -46,7 +46,7 @@ const GeneralJournal = () => {
       <Table style={{marginTop: 50}} border={2}>
         <thead>
           <tr>
-            <th colSpan={5}><h4>Adjusting Entries</h4></th>
+            <th colSpan={5}><h4 style={{textAlign: 'center'}}>Adjusting Entries</h4></th>
           </tr>
           <tr>
             <th>Date</th>
