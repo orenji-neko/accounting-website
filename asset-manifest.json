@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/accounting-website/static/css/main.44cd5e0f.css",
-    "main.js": "/accounting-website/static/js/main.8f98c1ed.js",
+    "main.js": "/accounting-website/static/js/main.5501e9ec.js",
     "index.html": "/accounting-website/index.html",
     "main.44cd5e0f.css.map": "/accounting-website/static/css/main.44cd5e0f.css.map",
-    "main.8f98c1ed.js.map": "/accounting-website/static/js/main.8f98c1ed.js.map"
+    "main.5501e9ec.js.map": "/accounting-website/static/js/main.5501e9ec.js.map"
   },
   "entrypoints": [
     "static/css/main.44cd5e0f.css",
-    "static/js/main.8f98c1ed.js"
+    "static/js/main.5501e9ec.js"
   ]
 }
