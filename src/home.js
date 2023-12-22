@@ -1,4 +1,5 @@
 import { Table } from "react-bootstrap";
+import Profile from "./profile";
 
 const Home = () => {
   return (
