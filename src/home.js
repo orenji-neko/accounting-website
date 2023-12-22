@@ -1,12 +1,21 @@
 import { Table } from "react-bootstrap";
 import Profile from "./profile";
 
+import doctorImage from './doctor.png'
+
 const Home = () => {
+  const imagestyle = {
+    backgroundSize: "cover",
+    height: "100%",
+  };
+
   return (
     <>
       <table style={{width: '100%'}}>
         <tr>
-          <td style={{paddingLeft: '50%'}}></td>
+          <td>
+            <img src={doctorImage} style={imagestyle}/>
+          </td>
           <td>
             <div style={{paddingLeft: '5%', marginTop: 100}}>
               <div style={{textAlign: 'right', color: 'white'}}>
