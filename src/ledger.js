@@ -1,5 +1,5 @@
 import React from "react"
-import { Table } from "react-bootstrap"
+import { Tab, Table } from "react-bootstrap"
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Entry = ({debit_date = '', debit = '', credit_date = '', credit = ''}) => {
@@ -232,11 +232,19 @@ accounts.push(Account({
 const Ledger = () => {
   return (
     <>
-      <div style={{textAlign: "center", marginTop: 10}}>
-        <h4>Dr. Nick Marasigan, MD</h4>
-        <h4>General Ledger</h4>
-        <h4>For the month ended October 31. 2022</h4>
-      </div>
+      <Table border={2} style={{marginTop: 50}}>
+        <thead>
+          <tr>
+            <td>
+              <div style={{textAlign: "center"}}>
+              <h4>Dr. Nick Marasigan, MD</h4>
+              <h4>General Ledger</h4>
+              <h4>For the month ended October 31. 2022</h4>
+            </div>
+            </td>
+          </tr>
+        </thead>
+      </Table>
       {accounts.map((entry, index) => {
         return entry
       })}
