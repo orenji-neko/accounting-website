@@ -24,7 +24,6 @@ function App() {
     width: "100%",
     zIndex: "-1",
   };
-
   return (
     <>
       <div style={backgroundstyle}></div>
@@ -35,14 +34,14 @@ function App() {
               <h4 style={{marginBottom: -2}}>Dr. Nick Marasigan</h4>
               <p>Medical Doctor</p>
             </Navbar.Brand>
-            <Nav className="me-auto" style={{marginLeft: "10%"}}>
-              <Nav.Link href="#home" onClick={() => {setPanel(<Home/>)}}>Home</Nav.Link>
-              <Nav.Link href="#chart" onClick={()=>{setPanel(<Chart/>)}}>Chart of Accounts</Nav.Link>
-              <Nav.Link href="#generaljournal" onClick={() => {setPanel(<GeneralJournal/>)}}>General Journal</Nav.Link>
-              <Nav.Link href="#generalledger" onClick={() => {setPanel(<Ledger/>)}}>General Ledger</Nav.Link>
-              <Nav.Link href="#trialbalance" onClick={() => {setPanel(<TrialBalance/>)}}>Trial Balance</Nav.Link>
-              <Nav.Link href="#worksheet" onClick={() => {setPanel(<Worksheet/>)}}>10-Column Worksheet</Nav.Link>
-              <Nav.Link href="#financials" onClick={() => {setPanel(<FinancialStatements/>)}}>Financial Statements</Nav.Link>
+            <Nav className="me-auto">
+              <Nav.Link className="text-nowrap" href="#home" onClick={() => {setPanel(<Home/>)}}>Home</Nav.Link>
+              <Nav.Link className="text-nowrap" href="#chart" onClick={()=>{setPanel(<Chart/>)}}>Chart of Accounts</Nav.Link>
+              <Nav.Link className="text-nowrap" href="#generaljournal" onClick={() => {setPanel(<GeneralJournal/>)}}>General Journal</Nav.Link>
+              <Nav.Link className="text-nowrap" href="#generalledger" onClick={() => {setPanel(<Ledger/>)}}>General Ledger</Nav.Link>
+              <Nav.Link className="text-nowrap" href="#trialbalance" onClick={() => {setPanel(<TrialBalance/>)}}>Trial Balance</Nav.Link>
+              <Nav.Link className="text-nowrap" href="#worksheet" onClick={() => {setPanel(<Worksheet/>)}}>10-Column Worksheet</Nav.Link>
+              <Nav.Link className="text-nowrap" href="#financials" onClick={() => {setPanel(<FinancialStatements/>)}}>Financial Statements</Nav.Link>
             </Nav>
           </Container>
         </Navbar>
