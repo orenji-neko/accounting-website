@@ -4,19 +4,19 @@ import Profile from "./profile";
 const Home = () => {
   return (
     <>
-      <h2 style={{textAlign: 'center'}}>Home</h2>
-      <div>
-        <h4>Problem #8</h4>
-      </div>
-      <div style={{paddingLeft: 10}}>
-        <h4>Members</h4>
-        <div style={{paddingLeft: 10}}>
-          <p>Mark Jess Anthony S. Enfermo</p>
-          <p>Jun-del S. Patuasic</p>
-          <p>John Aries C. Rizada</p>
-          <p>Andrian S. Balberos</p>
-        </div>
-      </div>
+      <table style={{width: '100%'}}>
+        <tr>
+          <td style={{paddingLeft: '50%'}}></td>
+          <td>
+            <div style={{paddingLeft: '5%', marginTop: 100}}>
+              <div style={{textAlign: 'right', color: 'white'}}>
+                <h1 style={{fontSize: 57}}><b>MEDICAL<br/>CENTER</b></h1>
+                <p style={{fontSize: 19}}>Trust our medical experience to <br/>keep you in the best of shape.</p>
+              </div>
+            </div>
+          </td>
+        </tr>
+      </table>
     </>
   )
 }
