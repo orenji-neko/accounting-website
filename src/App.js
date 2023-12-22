@@ -1,4 +1,4 @@
-import { Button, Container } from "react-bootstrap";
+import { Button, Container, Nav, Navbar } from "react-bootstrap";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import GeneralJournal from "./journal";
@@ -16,16 +16,21 @@ function App() {
 
   return (
     <>
-      <Container fluid className="bg-dark text-white p-2">
-        <h1>Project in Accounting</h1>
-        <button onClick={() => {setPanel(<Home/>)}}>Home</button>
-        <button onClick={()=>{setPanel(<Chart/>)}}>Chart of Accounts</button>
-        <button onClick={() => {setPanel(<GeneralJournal/>)}}>General Journal</button>
-        <button onClick={() => {setPanel(<Ledger/>)}}>General Ledger</button>
-        <button onClick={() => {setPanel(<TrialBalance/>)}}>Trial Balance</button>
-        <button onClick={() => {setPanel(<Worksheet/>)}}>10-Column Worksheet</button>
-        <button onClick={() => {setPanel(<FinancialStatements/>)}}>Financial Statements</button>
-      </Container>
+      <Navbar bg="dark" variant="dark" sticky="top">
+        <Container>
+          <Navbar.Brand href="#home">Project in Accounting</Navbar.Brand>
+          <Nav className="me-auto">
+            <Nav.Link href="#home" onClick={() => {setPanel(<Home/>)}}>Home</Nav.Link>
+            <Nav.Link href="#chart" onClick={()=>{setPanel(<Chart/>)}}>Chart of Accounts</Nav.Link>
+            <Nav.Link href="#generaljournal" onClick={() => {setPanel(<GeneralJournal/>)}}>General Journal</Nav.Link>
+            <Nav.Link href="#generalledger" onClick={() => {setPanel(<Ledger/>)}}>General Ledger</Nav.Link>
+            <Nav.Link href="#trialbalance" onClick={() => {setPanel(<TrialBalance/>)}}>Trial Balance</Nav.Link>
+            <Nav.Link href="#worksheet" onClick={() => {setPanel(<Worksheet/>)}}>10-Column Worksheet</Nav.Link>
+            <Nav.Link href="#financials" onClick={() => {setPanel(<FinancialStatements/>)}}>Financial Statements</Nav.Link>
+          </Nav>
+        </Container>
+      </Navbar>
+
 
       <Container>
         {panel}
